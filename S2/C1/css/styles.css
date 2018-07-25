@@ -6,3 +6,7 @@ body {
 table {
   text-align: left;
 }
+
+th, td {
+  border: 1px solid;
+}
