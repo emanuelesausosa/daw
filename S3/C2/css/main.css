@@ -1,0 +1,46 @@
+
+body{
+  background: #5DADE2;
+  font-family: Verdana;
+}
+
+
+#main-box {
+  background: #F0F3F4;
+  width: 950px;
+  height: 500px;
+}
+
+header {
+  background: #F0F3F4;
+  border-radius: 5px;
+  text-align: center;
+}
+
+li {
+  display: inline-flex;
+  margin: 25px;
+  color: white;
+}
+
+/* pseudo-clases*/
+a:link {
+  color: orange;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover {
+  color: forestgreen;
+}
+
+a:active {
+  color: lightcoral;
+}
+
+a:focus {
+  color: white;
+  background-color: orange;
+}
