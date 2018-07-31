@@ -1,0 +1,48 @@
+/*h1{
+  color: blue;
+  font-size: 50px;
+  font-family: Verdana;
+}*/
+
+/*selectores*/
+ /** {
+  font-family: Verdana;
+}*/
+
+body {
+  font-family: Verdana;
+  margin: 0;
+}
+
+header {
+  background: CornflowerBlue;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  /*border: 10px dotted green;*/
+}
+
+header h1{
+  text-transform: uppercase;
+  /*lowercase*/
+}
+
+/*USO de CLASS*/
+.portada {
+  text-align: center;
+  background: Gainsboro;
+}
+
+.portada h2 {
+  text-transform: uppercase;
+}
+
+.portada p {
+  font-style: italic;
+}
+
+/*uso del ID*/
+#main-footer {
+  text-align: center;
+  font-weight: bold;
+}
