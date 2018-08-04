@@ -1,0 +1,85 @@
+/*1. importamos las fuentes*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Playfair+Display+SC:400,400i');
+
+/*2. agregamos el back ground al body*/
+
+body {
+  background-color: darkcyan;
+}
+
+
+main {
+  background-color: #6B6B6B;
+  /* 5 ** parte de..*/
+  margin: 5% 10%;
+}
+
+/*3. font family a los textos*/
+.titulo-articulo h1,
+.pie-articulo,
+.pie-principal
+{
+  font-family: 'Playfair Display SC', serif;
+}
+
+.cuerpo-articulo {
+  font-family: 'Kaushan Script', cursive;
+  text-align: justify;
+  color: white;
+  font-size: 1.20rem;
+}
+
+/*4 propiedades - alinear textos, colores fuentes*/
+.titulo-articulo {
+  text-align: left;
+  color: white;
+}
+
+.pie-articulo {
+  text-align: right;
+  color: white;
+}
+
+.pie-principal{
+  text-align: center;
+  color: white;
+}
+
+/*5. Margin, padding, width */
+.articulo {
+  margin: 1% 0%;
+  padding: 5% 5%;
+}
+
+.titulo-articulo {
+  margin-left: 5%;
+}
+
+.cuerpo-articulo {
+  margin: 5% 15%;
+}
+
+.pie-articulo{
+  margin-right: 5%;
+  font-weight: normal;
+}
+
+
+/*6. borders*/
+main {
+  border-radius: 7px;
+}
+
+/*7.background image*/
+body {
+  background-image: url('/images/fuji.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/*8. transparencia*/
+main {
+  background-color: RGBA(0, 126, 182, 0.83);
+}
