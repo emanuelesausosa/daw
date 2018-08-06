@@ -1,0 +1,7 @@
+Fuente: Palatino Linotype
+Color Fuente: #FFFAFA
+
+
+Color header: #6D6D6D
+
+Color fondo titulo-noticia y bordes: #F17405
