@@ -1,0 +1,118 @@
+
+/*1. importar fuente*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Playfair+Display+SC');
+
+
+/*3. estableer el background*/
+body {
+  background-color: darkcyan;
+  color: white;
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0; 
+}
+
+.articulo {
+  background-color: RGBA(107, 107, 107, 0.65);  
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px 5px;
+}
+
+/*2. fuentes*/
+.articulo-encabezado,
+.articulo-pie,
+.pie-principal
+ {
+   /*2. fuentes*/
+  font-family: 'Playfair Display SC', serif;
+}
+
+.articulo-cuerpo {
+  /*2. fuentes*/
+  font-family: 'Kaushan Script', cursive;
+}
+
+/*4 .propiedades, alineación texto*/
+.articulo-encabezado {
+  text-align: left;
+}
+
+.articulo-cuerpo {
+  text-align: justify;
+}
+
+.articulo-pie {
+  text-align: right;
+}
+
+.pie-principal {
+  text-align: center;
+}
+
+/*5. modificando el margin, padding*/
+
+.articulo {
+  /*
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;*/
+
+  margin: 5% 10% 5% 10%;
+  padding: 5% 5% 5% 5%;
+}
+
+
+/*6. añadir imagen fondo*/
+body {
+  background-image: url('/images/fuji.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+/*Menu*/
+.menu {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0%;
+  background-color: RGBA(107, 107, 107, 0.40);
+  box-sizing: border-box;
+  padding: 0% 0.5%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);  
+}
+
+.menu nav ul {
+  margin-top: 0;
+  margin-bottom: 0%;
+}
+
+.menu ul{
+  display: inline-flex;  
+  list-style-type: none;
+}
+
+.menu li {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0%;
+  margin-left: 0%;  
+  padding-top: 50%;
+  padding-bottom: 50%;
+  padding-left: 100%;
+  padding-right: 100%;  
+  box-sizing: border-box;
+  font-family: 'Kaushan Script', cursive;
+  
+}
+
+.menu li:hover{
+  background-color: RGBA(107, 107, 107, 0.40);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}

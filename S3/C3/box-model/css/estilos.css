@@ -35,4 +35,23 @@ section{
     margin: 0px 0px 0px 0px;
     padding: 10px 10px 10px 10px;
     border: 5px dotted white;
+<<<<<<< HEAD
 }*/
+=======
+}
+
+article{
+    background: white;
+    margin: 10px 10px 50px 10px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;    
+}
+
+
+h1{
+    background: darkcyan;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    color: white;    
+}
+>>>>>>> f6472806e60d089495afafbd3fada43095cc6e74

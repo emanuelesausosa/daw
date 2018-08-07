@@ -1,0 +1,33 @@
+Citas: http://www.frasesypensamientos.com.ar/frases/primera-nieve-en-el-monte-fuji-1958.html
+fuentes: Playfair Display SC, Kaushan Script
+Color gris: 
+	HEX: #6B6B6B
+	RGBA(107, 107, 107, 0.65)
+
+Color azul: 
+	HEX: #5A7EB6
+	RGBA(90, 126, 182, 0.83) (header, footer)
+	RGBA(90, 126, 182, 0.65) (body)
+
+---------------------------------
+Números en japonés
+------------------------
+Método 1 Números del 1 al 10
+“Ichi” significa uno: (?). Se pronuncia tal como se escribe. ...
+“Ni” significa dos: (?). Se pronuncia tal como se escribe.
+“San” significa tres: (?). ...
+“Shi” significa cuatro: (?). ...
+“Go” significa cinco: (?). ...
+“Roku” significa seis: (?). ...
+“Shichi” significa siete: (?). ...
+“Hachi” significa ocho: (?).
+--------------------------------------------------
+
+1: Hacer la estructura en HTML
+2: Establecer las fuentes
+3: background
+4: clases o ids, propiedades para los objetos
+5: height and widht, margin and padding 
+6: borders
+7: usar el background image
+8: transparencias
