@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bitter|Crimson+Text|Merriweather|PT+Serif|Slabo+27px');
+
+/*1. Fuentes*/
+
+.titulo h1 {
+  font-family: 'Bitter', serif;
+}
+
+.titulo p {
+  font-family: 'Slabo 27px', serif;
+  font-style: italic;
+}
+
+.post header h4 {
+  font-family: 'Merriweather', serif;
+}
+
+.numero {
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+}
+
+.post p {
+  font-family: 'Crimson Text', serif;
+}
