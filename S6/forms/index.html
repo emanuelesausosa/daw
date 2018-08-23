@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularios HTML</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <form class="" action="index.html" method="post">
+
+      <fieldset>
+
+        <legend>Info de usuario</legend>
+
+        <label for="name">Nombre de usuario</label>
+        <input type="text" name="user_name" value="" id="name"
+        placeholder="Nombre de usuario">
+
+        <label for="email">Email</label>
+        <input type="email" name="user_email" id="email" value="someone@yahoo.es" required="" disabled="">
+
+        <label for="password"> Password</label>
+        <input type="password" name="user_password" id="password" placeholder="password">
+      </fieldset>
+      <fieldset>
+        <legend>Info extra</legend>
+        <textarea name="resumen" rows="8" cols="80">
+          Soy el texto
+        </textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Info laboral</legend>
+        <label for="profesion">Profesion</label>
+        <select class="" name="profesion">
+          <optgroup label="Web">
+            <option value="diseniador">Diseñador Grpafico</option>
+            <option value="programdor_net">Programador .Net</option>
+          </optgroup>
+          <optgroup label="boss">
+            <option value="banquero">Dueño de bancos</option>
+            <option value="magnate">Dueños de propiedades</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" id="masculino" name="sexo" value="Masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" id="femenino" name="sexo" value="Femenino">
+        <label for="masculino">Femenino</label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Hobbies</legend>
+        <input type="checkbox" id="pelicula" name="hobbie" value="Pelicula">
+        <label for="pelicula">Ver peliculas / series</label>
+
+        <input type="checkbox" id="musica" name="hobbie" value="Musica">
+        <label for="musica">Escuchar música</label>
+
+        <input type="checkbox" id="leer" name="hobbie" value="Leer">
+        <label for="leer">Leer libros</label>
+
+      </fieldset>
+
+      <button type="submit">Ingresar</button>
+    </form>
+  </body>
+</html>
