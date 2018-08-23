@@ -3,9 +3,42 @@
 <head>
     <meta charset="utf-8" />    
     <title>Page Title</title>
-    
+    <style>
+        #hexagono{
+            width: 100px;
+            height: 55px;
+            background: red;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        #hexagono:before {
+            content: "";
+            position: absolute;
+            top: -25px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 25px solid red;
+        }
+
+        #hexagono:after{
+            content: "";
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 25px solid red;
+        }
+    </style>
 </head>
 <body>
-    <img src="https://picsum.photos/1720/780" alt="some">
+    <div id="hexagono"></div>
 </body>
 </html>
