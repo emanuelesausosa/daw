@@ -1,0 +1,17 @@
+.caja {
+  height: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.caja-1 {
+  background-color: chocolate;
+}
+
+.caja-2 {
+  background-color: green;
+}
+
+.caja-3 {
+  background-color: brown;
+}
