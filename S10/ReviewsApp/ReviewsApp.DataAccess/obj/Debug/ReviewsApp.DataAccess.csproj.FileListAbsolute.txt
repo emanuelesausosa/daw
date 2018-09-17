@@ -1,0 +1,12 @@
+C:\Ceutec\DiseñoDeAplicacionesWeb\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Debug\ReviewsApp.DataAccess.dll.config
+C:\Ceutec\DiseñoDeAplicacionesWeb\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Debug\ReviewsApp.DataAccess.dll
+C:\Ceutec\DiseñoDeAplicacionesWeb\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Debug\ReviewsApp.DataAccess.pdb
+C:\Ceutec\DiseñoDeAplicacionesWeb\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Debug\EntityFramework.dll
+C:\Ceutec\DiseñoDeAplicacionesWeb\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Ceutec\DiseñoDeAplicacionesWeb\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Debug\EntityFramework.xml
+C:\Ceutec\DiseñoDeAplicacionesWeb\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Ceutec\DiseñoDeAplicacionesWeb\S10\ReviewsApp\ReviewsApp.DataAccess\obj\Debug\ReviewsApp.DataAccess.csprojAssemblyReference.cache
+C:\Ceutec\DiseñoDeAplicacionesWeb\S10\ReviewsApp\ReviewsApp.DataAccess\obj\Debug\ReviewsApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Ceutec\DiseñoDeAplicacionesWeb\S10\ReviewsApp\ReviewsApp.DataAccess\obj\Debug\ReviewsApp.DataAccess.csproj.CopyComplete
+C:\Ceutec\DiseñoDeAplicacionesWeb\S10\ReviewsApp\ReviewsApp.DataAccess\obj\Debug\ReviewsApp.DataAccess.dll
+C:\Ceutec\DiseñoDeAplicacionesWeb\S10\ReviewsApp\ReviewsApp.DataAccess\obj\Debug\ReviewsApp.DataAccess.pdb

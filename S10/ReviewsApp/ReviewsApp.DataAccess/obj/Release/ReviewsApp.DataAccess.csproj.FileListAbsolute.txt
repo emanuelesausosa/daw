@@ -1,0 +1,11 @@
+C:\Ceutec\DiseñoDeAplicacionesWeb\daw\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Release\ReviewsApp.DataAccess.dll.config
+C:\Ceutec\DiseñoDeAplicacionesWeb\daw\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Release\ReviewsApp.DataAccess.dll
+C:\Ceutec\DiseñoDeAplicacionesWeb\daw\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Release\ReviewsApp.DataAccess.pdb
+C:\Ceutec\DiseñoDeAplicacionesWeb\daw\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Release\EntityFramework.dll
+C:\Ceutec\DiseñoDeAplicacionesWeb\daw\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Release\EntityFramework.SqlServer.dll
+C:\Ceutec\DiseñoDeAplicacionesWeb\daw\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Release\EntityFramework.xml
+C:\Ceutec\DiseñoDeAplicacionesWeb\daw\S10\ReviewsApp\ReviewsApp.DataAccess\bin\Release\EntityFramework.SqlServer.xml
+C:\Ceutec\DiseñoDeAplicacionesWeb\daw\S10\ReviewsApp\ReviewsApp.DataAccess\obj\Release\ReviewsApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Ceutec\DiseñoDeAplicacionesWeb\daw\S10\ReviewsApp\ReviewsApp.DataAccess\obj\Release\ReviewsApp.DataAccess.csproj.CopyComplete
+C:\Ceutec\DiseñoDeAplicacionesWeb\daw\S10\ReviewsApp\ReviewsApp.DataAccess\obj\Release\ReviewsApp.DataAccess.dll
+C:\Ceutec\DiseñoDeAplicacionesWeb\daw\S10\ReviewsApp\ReviewsApp.DataAccess\obj\Release\ReviewsApp.DataAccess.pdb

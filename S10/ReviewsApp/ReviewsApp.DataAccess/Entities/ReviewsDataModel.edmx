@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ReviewsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Criticas">
+          <Key>
+            <PropertyRef Name="RowId" />
+          </Key>
+          <Property Name="RowId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Comentarios" Type="nvarchar(max)" />
+          <Property Name="Estrellas" Type="int" />
+          <Property Name="Autor" Type="nvarchar" MaxLength="50" />
+          <Property Name="PostId" Type="int" />
+        </EntityType>
+        <EntityType Name="Posts">
+          <Key>
+            <PropertyRef Name="RowId" />
+          </Key>
+          <Property Name="RowId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Titulo" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Resumen" Type="nvarchar(max)" />
+          <Property Name="Imagen" Type="image" />
+          <Property Name="Autor" Type="nvarchar" MaxLength="50" />
+          <Property Name="FechaPublicacion" Type="datetime" />
+          <Property Name="UrlVideo" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <Association Name="FK_Criticas_Posts">
+          <End Role="Posts" Type="Self.Posts" Multiplicity="0..1" />
+          <End Role="Criticas" Type="Self.Criticas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Posts">
+              <PropertyRef Name="RowId" />
+            </Principal>
+            <Dependent Role="Criticas">
+              <PropertyRef Name="PostId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ReviewsModelStoreContainer">
+          <EntitySet Name="Criticas" EntityType="Self.Criticas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Posts" EntityType="Self.Posts" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Criticas_Posts" Association="Self.FK_Criticas_Posts">
+            <End Role="Posts" EntitySet="Posts" />
+            <End Role="Criticas" EntitySet="Criticas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ReviewsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Criticas">
+          <Key>
+            <PropertyRef Name="RowId" />
+          </Key>
+          <Property Name="RowId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Comentarios" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Estrellas" Type="Int32" />
+          <Property Name="Autor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PostId" Type="Int32" />
+          <NavigationProperty Name="Posts" Relationship="Self.FK_Criticas_Posts" FromRole="Criticas" ToRole="Posts" />
+        </EntityType>
+        <EntityType Name="Posts">
+          <Key>
+            <PropertyRef Name="RowId" />
+          </Key>
+          <Property Name="RowId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Titulo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Resumen" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Imagen" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Autor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FechaPublicacion" Type="DateTime" Precision="3" />
+          <Property Name="UrlVideo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Criticas" Relationship="Self.FK_Criticas_Posts" FromRole="Posts" ToRole="Criticas" />
+        </EntityType>
+        <Association Name="FK_Criticas_Posts">
+          <End Role="Posts" Type="Self.Posts" Multiplicity="0..1" />
+          <End Role="Criticas" Type="Self.Criticas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Posts">
+              <PropertyRef Name="RowId" />
+            </Principal>
+            <Dependent Role="Criticas">
+              <PropertyRef Name="PostId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ReviewsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Criticas" EntityType="Self.Criticas" />
+          <EntitySet Name="Posts" EntityType="Self.Posts" />
+          <AssociationSet Name="FK_Criticas_Posts" Association="Self.FK_Criticas_Posts">
+            <End Role="Posts" EntitySet="Posts" />
+            <End Role="Criticas" EntitySet="Criticas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ReviewsModelStoreContainer" CdmEntityContainer="ReviewsEntities">
+          <EntitySetMapping Name="Criticas">
+            <EntityTypeMapping TypeName="ReviewsModel.Criticas">
+              <MappingFragment StoreEntitySet="Criticas">
+                <ScalarProperty Name="RowId" ColumnName="RowId" />
+                <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
+                <ScalarProperty Name="Estrellas" ColumnName="Estrellas" />
+                <ScalarProperty Name="Autor" ColumnName="Autor" />
+                <ScalarProperty Name="PostId" ColumnName="PostId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Posts">
+            <EntityTypeMapping TypeName="ReviewsModel.Posts">
+              <MappingFragment StoreEntitySet="Posts">
+                <ScalarProperty Name="RowId" ColumnName="RowId" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="Resumen" ColumnName="Resumen" />
+                <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+                <ScalarProperty Name="Autor" ColumnName="Autor" />
+                <ScalarProperty Name="FechaPublicacion" ColumnName="FechaPublicacion" />
+                <ScalarProperty Name="UrlVideo" ColumnName="UrlVideo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

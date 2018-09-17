@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReviewsModelStoreContainer" CdmEntityContainer="ReviewsEntities">
+    <EntitySetMapping Name="Criticas">
+      <EntityTypeMapping TypeName="ReviewsModel.Criticas">
+        <MappingFragment StoreEntitySet="Criticas">
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+          <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
+          <ScalarProperty Name="Estrellas" ColumnName="Estrellas" />
+          <ScalarProperty Name="Autor" ColumnName="Autor" />
+          <ScalarProperty Name="PostId" ColumnName="PostId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posts">
+      <EntityTypeMapping TypeName="ReviewsModel.Posts">
+        <MappingFragment StoreEntitySet="Posts">
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Resumen" ColumnName="Resumen" />
+          <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+          <ScalarProperty Name="Autor" ColumnName="Autor" />
+          <ScalarProperty Name="FechaPublicacion" ColumnName="FechaPublicacion" />
+          <ScalarProperty Name="UrlVideo" ColumnName="UrlVideo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

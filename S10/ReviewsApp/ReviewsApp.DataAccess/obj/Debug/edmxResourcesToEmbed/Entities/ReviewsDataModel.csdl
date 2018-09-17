@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ReviewsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Criticas">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Name="RowId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Comentarios" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Estrellas" Type="Int32" />
+    <Property Name="Autor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PostId" Type="Int32" />
+    <NavigationProperty Name="Posts" Relationship="Self.FK_Criticas_Posts" FromRole="Criticas" ToRole="Posts" />
+  </EntityType>
+  <EntityType Name="Posts">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Name="RowId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Titulo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Resumen" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Imagen" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Autor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FechaPublicacion" Type="DateTime" Precision="3" />
+    <Property Name="UrlVideo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Criticas" Relationship="Self.FK_Criticas_Posts" FromRole="Posts" ToRole="Criticas" />
+  </EntityType>
+  <Association Name="FK_Criticas_Posts">
+    <End Role="Posts" Type="Self.Posts" Multiplicity="0..1" />
+    <End Role="Criticas" Type="Self.Criticas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Posts">
+        <PropertyRef Name="RowId" />
+      </Principal>
+      <Dependent Role="Criticas">
+        <PropertyRef Name="PostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ReviewsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Criticas" EntityType="Self.Criticas" />
+    <EntitySet Name="Posts" EntityType="Self.Posts" />
+    <AssociationSet Name="FK_Criticas_Posts" Association="Self.FK_Criticas_Posts">
+      <End Role="Posts" EntitySet="Posts" />
+      <End Role="Criticas" EntitySet="Criticas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
